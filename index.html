@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mausam - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="resources/portfolio_icon.jpeg" type="image/jpeg">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="profile">
+            <img src="resources/icon.webp" alt="Mausam" class="profile-img">
+            <h2>Mausam's Portfolio</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/mausam_dwivedi_005/?igsh=MWJpMGdjOXRwcGI2ag%3D%3D" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/mausam-005" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/feed/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+
+        <nav class="nav-menu">
+            <a href="#home" class="nav-item active" data-section="home"><i class="fas fa-home"></i> Home</a>
+            <a href="#about" class="nav-item" data-section="about"><i class="fas fa-user"></i> About</a>
+            <a href="#projects" class="nav-item" data-section="projects"><i class="fas fa-briefcase"></i> Projects</a>
+            <a href="#contact" class="nav-item" data-section="contact"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Mausam</h1>
+                    <p>I am a <span id="typing-text">Student|</span></p>
+                    <div class="hero-buttons">
+                        <a href="resources/Resume-Mausam Kumar Dwivedi.pdf" download class="resume-btn">Download Resume</a>
+
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="resources/Profile_image.jpg" alt="Mausam's Profile">
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="about-container">
+                <h2 class="about-header">About Me</h2>
+                <p class="about-description">
+                    <span>Hi, I'm Mausam Kumar Dwivedi, an aspiring web developer with a strong foundation in Python, HTML, CSS, and JavaScript. Currently, I'm expanding my skill set by learning React and Data Structures & Algorithms(DSA) to build efficient and dynamic web applications.</span>
+                    <span>I have a strong passion for continuous learning and exploring new technologies, with a growing interest in Artificial Intelligence (AI).</span>
+                    <span>My goal is to master both web development and AI, contribute to innovative projects, and make a meaningful impact in the tech world.</span>
+                </p>
+                
+                <div class="tab-container">
+                    <div class="tab-buttons">
+                        <button class="tab-button active" data-tab="skills">Skills</button>
+                        <button class="tab-button" data-tab="coding">Coding Profiles</button>
+                        <button class="tab-button" data-tab="education">Education</button>
+                    </div>
+                    
+                    <div id="skills" class="tab-content active">
+                        <ul class="skills-list">
+                            <li>
+                                <span class="skill-name">Web Development</span>
+                                Building responsive and functional websites using HTML, CSS, JavaScript, and React.
+                            </li>
+                            <li>
+                                <span class="skill-name">Programming Languages</span>
+                                Strong foundation in Python with education in problem-solving and data structures.
+                            </li>
+                            <li>
+                                <span class="skill-name">Artificial Intelligence (AI)</span>
+                                Currently learning the basics of AI, exploring fundamental concepts and applications.
+                            </li>
+                            <li>
+                                <span class="skill-name">UI/UX Design</span>
+                                Designing intuitive, user-friendly interfaces with a focus on user education.
+                            </li>
+                            <li>
+                                <span class="skill-name">Data Structures & Algorithms (DSA)</span>
+                                Developing efficient algorithms and problem-solving techniques to optimize code performance.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div id="education" class="tab-content">
+                        <div class="education-item">
+                            <div class="education-title">Matriculation (Class X)</div>
+                            <div class="education-description">DAV Public School, Sasaram</div>
+                            <p>Completed Secondary Education (2019 - 2020).</p>
+                            <p><strong>Grade:</strong> 95.2%</p>
+                        </div>
+
+                        <div class="education-item">
+                            <div class="education-title">Intermediate (Class XII)</div>
+                            <div class="education-description">SCS Lalganj Tetri, Sasaram</div>
+                            <p>Completed Higher Secondary Education with a focus on Science (2021 - 2022).</p>
+                            <p><strong>Grade:</strong> 80.2%</p>
+                        </div>
+                        
+                        <div class="education-item">
+                            <div class="education-title">Bachelor of Technology (Computer Science & Artificial Intelligence)</div>
+                            <div class="education-description">Newton School of Technology, Rishihood University</div>
+                            <p>Currently pursuing a B.Tech in Computer Science with a specialization in Artificial Intelligence (2024 - 2028).</p>
+                            <p><strong>Grade:</strong> 7.6/10.0</p>
+                        </div>
+                    </div>
+
+                    <div id="coding" class="tab-content">
+
+                        <div class="education-item">
+                            <a href="https://leetcode.com/u/mausam_here/" target="_blank" class="profile-link">
+                                <img src="resources/leetcode_logo.png" alt="LeetCode Logo" class="logo-img" style="height: 30px; width: 30px;">
+                            </a>
+                            <div class="education-title">LeetCode</div>
+                            <div class="education-description">Platform for Coding Interviews</div>
+                            <p>Focused on data structures, algorithms, and problem-solving to prepare for technical interviews.</p>
+                        </div>
+
+                        <div class="education-item">
+                            <a href="https://codeforces.com/profile/Mausam_Dwivedi" target="_blank" class="profile-link">
+                                <img src="resources/codeforces_logo.jpeg" alt="Codeforces Logo" class="logo-img"" style="height: 30px; width: 30px">
+                            </a>
+                            <div class="education-title">Codeforces</div>
+                            <div class="education-description">Competitive Programming Platform</div>
+                            <p>Active participant in contests, solving algorithmic problems and improving problem-solving skills.</p>
+                        </div>
+                    
+                        <div class="education-item">
+                            <a href="https://www.codechef.com/users/mausam_dwivedi" target="_blank" class="profile-link">
+                                <img src="resources/codechef_logo.jpg" alt="CodeChef Logo" class="logo-img" style="height: 30px; width: 30px">
+                            </a>
+                            <div class="education-title">CodeChef</div>
+                            <div class="education-description">Online Coding Platform</div>
+                            <p>Engaged in various coding challenges, enhancing DSA knowledge through practice problems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section --> 
+<section id="projects" class="section">
+    <h2 class="project-header">Projects</h2>
+    
+    <div class="projects-container">
+        <!-- Capstone Project -->
+        <div class="project-card">
+            <img src="resources/Capstone.png" alt="Capstone Project" class="project-image">
+            <h3 class="project-title">CAPSTONE</h3>
+            <p class="project-description">
+                My 1st-semester capstone project, built solely with HTML and CSS, served to evaluate my foundational proficiency in web development. This project was further discussed during an interview.
+            </p>
+            <a href="https://mausam-005.github.io/Capstone/" class="project-link"><i class="fas fa-external-link-alt"></i> See Project</a>
+        </div>
+
+        <!-- Weather App Project -->
+        <div class="project-card">
+            <img src="resources/Weather.png" alt="Weather App" class="project-image">
+            <h3 class="project-title">Weather App</h3>
+            <p class="project-description">
+                A weather app built with React and Vite that provides real-time weather data, allows users to search cities, and pin multiple locations for quick access. Features dynamic weather icons and a responsive design.            </p>
+            <a href="https://weatherbaby.netlify.app/" class="project-link"><i class="fas fa-external-link-alt"></i> See Project</a>
+        </div>
+        
+        <!-- Add more projects here -->
+    </div>
+
+    <p class="project-footer">Building more projects to expand my portfolio. Stay tuned!</p>
+</section>
+
+        
+        
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="contact-header">Contact</h2>
+            <span class="contact-blue-line"></span>
+            <p class="contact-intro">Feel free to reach out to me anytime!</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Address</h3>
+                            <p>NH-44 (GT Road), near Bahalgarh Chowk,</p>
+                            <p>Delhi NCR, Sonipat, Haryana – 131021, India</p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>mausam.dwivedi2020@example.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <h3>Location Map - Rishihood University</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58613.37434834035!2d77.012301!3d28.733265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1e3c4f3f3f3f%3A0x6a4e2e4b7f3f3f3f!2sRishihood+University%2C+Sonipat!5e0!3m2!1sen!2sin!4v1619003000191!5m2!1sen!2sin"
+                            width="100%"
+                            height="300"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-row" style="display: flex; gap: 20px;">
+                            <div class="form-group" style="flex: 1;">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" class="form-control">
+                            </div>
+                            <div class="form-group" style="flex: 1;">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+
+    <div class="footer">
+        <p>© 2025 Mausam. All Rights Reserved.</p>
+    </div>
+    
+</body>
+</html>
